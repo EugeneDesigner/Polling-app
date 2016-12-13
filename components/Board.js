@@ -4,13 +4,10 @@ import {BarChart} from 'react-d3'
 
 
 const barGraphData = (results) => {
-  console.log(Object.keys(results))
-  return Object.keys(results).map(function(choice) {
-    return {
-      label: choice,
-      values: [{"x": choice, "y": results[choice]}]
-    }
-  })
+  return [{
+      label: 'Question',
+      values: Object.keys(results).map((choice) => { return {x: choice, y: results[choice]} })
+    }]
 
 }
 
@@ -28,7 +25,7 @@ const Board = (props) => {
       </Display>
 
       <Display if={props.state.status==='connected' && !props.state.currentQuestion}>
-        <h3>Awaiting a Question...</h3>
+        <h3>Awaiting for a Question...</h3>
       </Display>
 
     </div>

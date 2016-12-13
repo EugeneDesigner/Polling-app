@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+import {Col, ListGroup, ListGroupItem } from 'react-bootstrap'
 
 
 
@@ -20,9 +20,9 @@ export default class Questions extends Component  {
 
       addQuestion(question, i) {
         return (
-          <div key={i} className="col-xs-12 col-sm-6 col-md-3">
+          <Col key={i} xs={12} md={3} sm={6}>
             <span onClick={(e) => this.ask(question)}>{question.q}</span>
-          </div>
+          </Col>
         )
       }
       render() {

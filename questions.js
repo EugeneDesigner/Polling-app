@@ -21,7 +21,7 @@ module.exports = [
     "d": "Yes, I play musical instrument, or even not one"
   },
   {
-    "q": "Is there any meaning in life",
+    "q": "Is there any meaning in life?",
     "a": "I dunno, had breakfast today. It was damn meaningful",
     "b": "Is it a philosophy class? It is hard to answer this question",
     "c": "No, there is no meaning. We are just striving to find it, and then die",

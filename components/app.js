@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Header from './parts/Header'
 import io from 'socket.io-client'
-
+import './styles/main.scss'
 let socket = io('http://localhost:3000')
 
 export default class App extends Component {
@@ -19,32 +19,11 @@ export default class App extends Component {
       currentQuestion: false,
       results: {}
     }
-    this.connect        = this.connect.bind(this)
-    this.disconnect     = this.disconnect.bind(this)
-    this.updateState    = this.updateState.bind(this)
-    this.joined         = this.joined.bind(this)
-    this.updateAudience = this.updateAudience.bind(this)
-    this.start          = this.start.bind(this)
-    this.ask            = this.ask.bind(this)
-    this.updateResults  = this.updateResults.bind(this)
+    this.emit = this.emit.bind(this)
   }
 
   componentWillMount() {
-    socket.on('connect', this.connect)
-    socket.on('disconnect', this.disconnect)
-    socket.on('welcome', this.updateState)
-    socket.on('joined', this.joined)
-    socket.on('audience', this.updateAudience)
-    socket.on('start', this.start)
-    socket.on('end', this.updateState)
-    socket.on('ask', this.ask)
-    socket.on('result', this.updateResults)
-  }
-
-  emit(eventName, payload) {
-    socket.emit(eventName, payload)
-  }
-  connect() {
+    socket.on('connect', () => {
       let member = (sessionStorage.member) ? JSON.parse(sessionStorage.member) : null
 
       if (member && member.type === 'audience') {
@@ -53,45 +32,51 @@ export default class App extends Component {
         this.emit('start', {name: member.name, title: sessionStorage.title})
       }
       this.setState({status: 'connected'})
-  }
+    })
 
-  disconnect() {
-    this.setState({
-      status: 'disconnected',
-      title: 'disconnected',
-      speaker: ''
+
+    socket.on('disconnect', () => {
+      this.setState({
+        status: 'disconnected',
+        title: 'disconnected',
+        speaker: ''
+      })
+    })
+
+    socket.on('welcome', x => this.setState(x))
+
+    socket.on('joined', (member) => {
+      sessionStorage.member = JSON.stringify(member)
+      this.setState({member})
+    })
+
+    socket.on('audience', (newAudience)=> {
+      this.setState({ audience: newAudience})
+    })
+
+    socket.on('start', (presentation)=> {
+        if (this.state.member.type === 'speaker') {
+          sessionStorage.title = presentation.title
+        }
+        this.setState(presentation)
+    })
+
+    socket.on('end', x => this.setState(x))
+    socket.on('ask', (question) => {
+        sessionStorage.answer = ''
+        this.setState({currentQuestion: question})
+    })
+
+
+    socket.on('result', (data) => {
+      this.setState({results: data})
     })
   }
 
-  updateState(serverState) {
-      this.setState(serverState)
+  emit(eventName, payload) {
+    socket.emit(eventName, payload)
   }
 
-  joined(member) {
-    sessionStorage.member = JSON.stringify(member)
-    this.setState({member})
-  }
-
-  updateAudience(newAudience) {
-    this.setState({ audience: newAudience})
-  }
-
-  start(presentation) {
-      if (this.state.member.type === 'speaker') {
-        sessionStorage.title = presentation.title
-      }
-      this.setState(presentation)
-  }
-
-  ask(question) {
-    sessionStorage.answer = ''
-    this.setState({currentQuestion: question})
-  }
-
-  updateResults(data) {
-    this.setState({results: data})
-
-  }
 
 
   render() {

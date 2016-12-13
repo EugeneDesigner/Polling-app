@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Display from './Display'
-
+import {ListGroup, ListGroupItem} from 'react-bootstrap'
 
 
 
@@ -49,11 +49,12 @@ export default class Ask extends Component  {
       addChoiceButton(choice, i) {
         let buttonTypes = ['primary', 'success', 'warning', 'danger']
         return(
-          <button key={i}
-                  className={"col-xs-12 col-sm-6 btn-" + buttonTypes[i]}
-                  onClick={(e) => this.select(choice)}>
-              {choice}: {this.props.question[choice]}
-          </button>
+          <ListGroup>
+            <ListGroupItem key={i} bsStyle={buttonTypes[i]}
+                    onClick={(e) => this.select(choice)}>
+                {choice}: {this.props.question[choice]}
+            </ListGroupItem>
+          </ListGroup>
         )
       }
 
@@ -63,8 +64,8 @@ export default class Ask extends Component  {
         return (
           <div id="currentQuestion">
             <Display if={this.state.answer}>
-              <h3>You answered: {this.state.answer}</h3>
-              <p>{this.props.question[this.state.answer]}</p>
+              <h3 className="currentQuestion__choice">You answered: {this.state.answer}</h3>
+              <p className="currentQuestion__answer">{this.props.question[this.state.answer]}</p>
             </Display>
             <Display if={!this.state.answer}>
                 <h2>{this.props.question.q}</h2>

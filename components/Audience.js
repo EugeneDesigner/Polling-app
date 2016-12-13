@@ -2,6 +2,7 @@ import React from 'react'
 import Display from './parts/Display'
 import Join from './parts/Join'
 import Ask from './parts/Ask'
+import {PageHeader} from 'react-bootstrap'
 const Audience = (props) =>  {
       return (
         <div><Display if={props.state.status === 'connected'}>
@@ -20,7 +21,7 @@ const Audience = (props) =>  {
                 </Display>
 
                 <Display if={!props.state.member.name}>
-                  <h1>Join the session</h1>
+                  <PageHeader>Join the Ask<span className="logo">|</span>ed session</PageHeader>
                   <Join emit={props.emit}/>
                 </Display>
 

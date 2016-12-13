@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import { Button, ControlLabel, FormControl } from 'react-bootstrap'
+
 
 export default class JoinSpeaker extends Component {
 
@@ -16,19 +18,20 @@ export default class JoinSpeaker extends Component {
 
   render() {
         return (
-          <form action="javascript:void(0)" onSubmit={this.start}>
+          <form className="join__form" action="javascript:void(0)" onSubmit={this.start}>
             <label>Full Name</label>
-            <input ref="name"
+            <FormControl ref="name"
                    className="form-control"
                    placeholder="enter your full name"
                    required/>
 
-           <label>Presentation Title</label>
-           <input ref="title"
+           <ControlLabel>Presentation Title</ControlLabel>
+           <FormControl ref="title"
                   className="form-control"
                   placeholder="Enter a title for this presentation"
                   required/>
-            <button className="btn btn-primary">Join</button>
+            <Button bsStyle="primary" role="submit" bsSize="large">Join</Button>
+            <p>Time to ask some questions, give freedom to your unlimited imagination!</p>
           </form>
         )
       }

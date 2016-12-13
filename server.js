@@ -1,12 +1,16 @@
-const express = require('express')
-const path    = require('path')
-const _       = require('underscore')
-const questions = require('./questions')
+import express from 'express'
+import path from 'path'
+import _ from 'underscore'
+import webpack from 'webpack'
+import webpackMiddleware from 'webpack-dev-middleware'
+import webpackHotMiddleware from 'webpack-hot-middleware'
+import webpackConfig from './webpack.config'
+import questions from './questions'
 const app = express()
 
 
 let connections     = [],
-    title           = 'Untitled Presentation',
+    title           = 'AskTitle',
     audience        = [],
     speaker         = {},
     currentQuestion = false,
@@ -17,6 +21,13 @@ let connections     = [],
                         d: 0
                       }
 
+const compiler = webpack(webpackConfig)
+app.use(webpackMiddleware(compiler, {
+  hot: true,
+  publicPath: webpackConfig.output.publicPath,
+  noInfo: true
+}))
+app.use(webpackHotMiddleware(compiler))
 
 app.use(express.static('./public'))
 app.use(express.static('./node_modules/bootstrap/dist'))

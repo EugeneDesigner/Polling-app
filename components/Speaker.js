@@ -2,6 +2,7 @@ import React from 'react'
 import Display from './parts/Display'
 import JoinSpeaker from './parts/JoinSpeaker'
 import Question from './parts/Questions'
+import {PageHeader} from 'react-bootstrap'
 
 import Attendance from './parts/Attendance'
 const Speaker = (props) => {
@@ -16,7 +17,7 @@ const Speaker = (props) => {
           </Display>
 
           <Display if={!props.state.member.name}>
-            <h2>Start the presentaion</h2>
+        <PageHeader>Start the Ask<span className="logo">|</span>ed session</PageHeader>
             <JoinSpeaker emit={props.emit}/>
           </Display>
         </Display>
