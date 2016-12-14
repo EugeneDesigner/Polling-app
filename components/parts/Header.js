@@ -3,11 +3,28 @@ import {Link} from 'react-router'
 import Icons from '../images/Icons'
 import Display from './Display'
 import { Button } from 'react-bootstrap'
+import ChatBox from './Chatbox'
 
 export default class Header extends Component {
+  constructor() {
+    super()
+
+    this.getId = this.getId.bind(this)
+  }
+
+
+  componentDidUpdate() {
+    this.getId()
+  }
+
+  getId() {
+    return this.props.state.status === 'connected' && this.props.state.member.name
+  }
+
 
   render() {
     return (
+
       <header className="row">
         <section className="header">
           <div className="header__guy"><Icons height="100%" width="auto" viewBox="0 0 380.99 390.64" icon="guy" /></div>
@@ -19,13 +36,10 @@ export default class Header extends Component {
               <Link to="/board"><Button bsStyle="warning">AskChart</Button></Link>
           </nav>
           <div className="header__profile">
-            <div><Icons height="80px" width="80px" viewBox="0.62 0.62 198.75 198.75" icon="profile"/></div>
-            <h4>{this.props.member.name || 'Your name'}</h4>
+            <div className={this.getId() ? 'connected' : 'disconnected'}><Icons height="80px" width="80px" viewBox="0.62 0.62 198.75 198.75" icon="profile"/></div>
+            <h4 className={this.getId() ? 'connected' : 'disconnected'}>{this.props.state.member.name || 'Your name'}</h4>
           </div>
-
-        <div className="col-xs-2">
-          <span id="connection-status" className={this.props.status}></span>
-        </div>
+      {this.props.state.member.name ? <ChatBox state={this.props.state} emit={this.props.emit}/> : null}
       </header>
     )
   }
@@ -34,9 +48,6 @@ export default class Header extends Component {
 
 
 
-    Header.propTypes = {
-      title: PropTypes.string.isRequired
-  }
 
     Header.defaultProps = {
       status: 'disconnected'

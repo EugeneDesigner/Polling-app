@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Display from './Display'
-import {ListGroup, ListGroupItem} from 'react-bootstrap'
+import {ListGroup, ListGroupItem, PageHeader} from 'react-bootstrap'
 
 
 
@@ -64,8 +64,8 @@ export default class Ask extends Component  {
         return (
           <div id="currentQuestion">
             <Display if={this.state.answer}>
-              <h3 className="currentQuestion__choice">You answered: {this.state.answer}</h3>
-              <p className="currentQuestion__answer">{this.props.question[this.state.answer]}</p>
+              <PageHeader className="currentQuestion__choice">You answered: <span className="underline">{this.state.answer}</span></PageHeader>
+              <p className="currentQuestion__answer"><b>Answer</b>: {this.props.question[this.state.answer]}</p>
             </Display>
             <Display if={!this.state.answer}>
                 <h2>{this.props.question.q}</h2>

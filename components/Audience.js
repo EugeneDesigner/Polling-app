@@ -10,10 +10,10 @@ const Audience = (props) =>  {
 
                 <Display if={props.state.member.name}>
 
-                    <Display if={!props.currentQuestion}>
-                        <h2>Welcome {props.state.member.name}</h2>
-                        <p>{props.state.audience.length} audience members connected</p>
-                        <p>Questions will appear here</p>
+                    <Display if={!props.state.currentQuestion}>
+                        <PageHeader>Welcome, {props.state.member.name}</PageHeader>
+                        <p className="audience__askMembers"><span className="underline">{props.state.audience.length}</span> {props.state.audience.length == 1 ? 'askMember' : 'askMembers'} connected</p>
+                        <p className="audience__questions">Questions will appear here, just wait for it</p>
                     </Display>
                     <Display if={props.state.currentQuestion}>
                       <Ask question={props.state.currentQuestion} emit={props.emit}/>

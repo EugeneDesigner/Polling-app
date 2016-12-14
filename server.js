@@ -78,7 +78,10 @@ io.sockets.on('connection', (socket) => {
     io.sockets.emit('audience', audience)
 
   })
-
+  socket.on('chat', function(message, name) {
+    io.sockets.emit('chat', message, name)
+    console.log('message: ' + message)
+  })
   socket.on('start', function(payload) {
     speaker.name = payload.name
     speaker.id   = this.id

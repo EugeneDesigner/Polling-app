@@ -13,7 +13,6 @@ export default class Join extends Component {
 
   join() {
     let memberName = this.refs.name.value
-    console.log(memberName)
     this.props.emit('join', {name: memberName})
   }
 
@@ -21,11 +20,12 @@ export default class Join extends Component {
         return (
           <form className="join__form" action="javascript:void(0)" onSubmit={this.join}>
             <ControlLabel>Full Name</ControlLabel>
-            <FormControl
+            <input
                    ref="name"
+                   className="form-control"
                    placeholder="enter your full name"
                    required/>
-            <Button bsStyle="primary" role="submit" bsSize="large">Join</Button>
+            <button className="btn btn-primary">Join</button>
 
            <p>Join discussion with other members, answer some strange questions, as well as post even more weird ones! Go Ask|ed full-mode</p>
           </form>

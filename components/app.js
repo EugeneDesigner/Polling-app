@@ -17,7 +17,8 @@ export default class App extends Component {
       speaker: '',
       questions: [],
       currentQuestion: false,
-      results: {}
+      results: {},
+      message: []
     }
     this.emit = this.emit.bind(this)
   }
@@ -60,7 +61,11 @@ export default class App extends Component {
         }
         this.setState(presentation)
     })
-
+    socket.on('chat', (chatter)=> {
+      let addM = {name: chatter[1], message: chatter[0], time: chatter[2]}
+      this.setState({message: [...this.state.message, addM]})
+      console.log(this.state.message)
+    })
     socket.on('end', x => this.setState(x))
     socket.on('ask', (question) => {
         sessionStorage.answer = ''
@@ -80,9 +85,10 @@ export default class App extends Component {
 
 
   render() {
+
     return (
       <div>
-        <Header {...this.state}/>
+        <Header state={this.state} emit={this.emit}/>
         {React.cloneElement(this.props.children, {state: this.state, emit: this.emit} )}
       </div>
     )

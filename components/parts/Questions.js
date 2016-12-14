@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Col, ListGroup, ListGroupItem } from 'react-bootstrap'
+import {Col, ListGroup, ListGroupItem, PageHeader } from 'react-bootstrap'
 
 
 
@@ -20,16 +20,16 @@ export default class Questions extends Component  {
 
       addQuestion(question, i) {
         return (
-          <Col key={i} xs={12} md={3} sm={6}>
-            <span onClick={(e) => this.ask(question)}>{question.q}</span>
-          </Col>
+          <ul>
+            <li onClick={(e) => this.ask(question)}>{question.q}</li>
+          </ul>
         )
       }
       render() {
 
         return (
           <div id="questions" className="row">
-            <h2>Questions</h2>
+            <PageHeader>Questions</PageHeader>
             {this.props.questions.map(this.addQuestion)}
           </div>
         )
