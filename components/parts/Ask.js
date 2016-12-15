@@ -50,6 +50,7 @@ export default class Ask extends Component  {
         let buttonTypes = ['primary', 'success', 'warning', 'danger']
         return(
           <ListGroup>
+
             <ListGroupItem key={i} bsStyle={buttonTypes[i]}
                     onClick={(e) => this.select(choice)}>
                 {choice}: {this.props.question[choice]}
@@ -63,6 +64,7 @@ export default class Ask extends Component  {
 
         return (
           <div id="currentQuestion">
+            <p className="current__asker"><span>{this.props.state.speaker}</span> is asking</p>
             <Display if={this.state.answer}>
               <PageHeader className="currentQuestion__choice">You answered: <span className="underline">{this.state.answer}</span></PageHeader>
               <p className="currentQuestion__answer"><b>Answer</b>: {this.props.question[this.state.answer]}</p>

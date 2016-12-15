@@ -6,12 +6,14 @@ export default class ChatBox extends Component {
   constructor() {
     super()
     this.state = {
-      heightLimit: 100
+      heightLimit: 100,
+      close: false
     }
     this.resize = this.resize.bind(this)
     this.sendMessage = this.sendMessage.bind(this)
     this.addMessage = this.addMessage.bind(this)
     this.addZero = this.addZero.bind(this)
+    this.close = this.close.bind(this)
   }
 
   addZero(i) {
@@ -19,6 +21,14 @@ export default class ChatBox extends Component {
           i = "0" + i
       }
       return i
+  }
+
+  close(e) {
+    e.preventDefault()
+    this.refs.close.classList.toggle('closed')
+    this.setState({close: !this.state.close})
+
+
   }
 
   sendMessage() {
@@ -57,9 +67,9 @@ export default class ChatBox extends Component {
   render() {
     console.log(this.props.state.message)
     return (
-      <form className="chatbox" action="javascript:void(0)" onSubmit={this.sendMessage}>
+      <form className="chatbox" ref="close"  action="javascript:void(0)" onSubmit={this.sendMessage}>
           <div className="chatbox__header">
-            <a href="#" className="chatbox-close"><span className="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+            <a href="#" className="chatbox-close" onClick={this.close}><span className={this.state.close ? "glyphicon glyphicon-chevron-up" : "glyphicon glyphicon-remove"} aria-hidden="true"></span></a>
             <span className={"user-status " + this.props.state.status}></span>
             <span className="display-name">{this.props.state.member.name}</span>
             <small>{this.props.state.status === 'connected' ? 'Online' : 'Offline'}</small>

@@ -16,7 +16,7 @@ const Audience = (props) =>  {
                         <p className="audience__questions">Questions will appear here, just wait for it</p>
                     </Display>
                     <Display if={props.state.currentQuestion}>
-                      <Ask question={props.state.currentQuestion} emit={props.emit}/>
+                      <Ask state={props.state} question={props.state.currentQuestion} emit={props.emit}/>
                     </Display>
                 </Display>
 

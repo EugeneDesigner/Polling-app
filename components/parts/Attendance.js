@@ -14,7 +14,7 @@ const Attendance = (props) =>  {
 
 
       return (
-        <div>
+        <div style={{marginTop: '50px'}}>
 
             <h2>Attendance - {props.audience.length} members </h2>
             <table className="table table-striped">

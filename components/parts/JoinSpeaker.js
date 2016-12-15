@@ -23,10 +23,10 @@ import React, {Component} from 'react'
                     placeholder="enter your full name"
                     required/>
 
-            <label>Presentation Title</label>
+            <label>Ask Title</label>
             <input ref="title"
                    className="form-control"
-                   placeholder="Enter a title for this presentation"
+                   placeholder="enter title for your question"
                    required/>
              <button className="btn btn-primary btn-lg">Join</button>
            </form>

@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7149425e7f957bb80a35"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1437d6531b52b5aa7fca"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -20153,7 +20153,7 @@
 
 
 	// module
-	exports.push([module.id, ".currentQuestion__choice {\n  padding: 40px; }\n\n.logo {\n  color: red;\n  font-weight: bold; }\n\nheader {\n  box-shadow: 2px 2px 32px -4px rgba(63, 63, 63, 0.9);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  padding-bottom: 30px;\n  margin-bottom: 50px; }\n\n.header {\n  background-color: #3f3f3f;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -ms-flex-line-pack: center;\n      align-content: center;\n  padding: 10px; }\n  .header .header__guy {\n    -ms-flex-item-align: center;\n        -ms-grid-row-align: center;\n        align-self: center; }\n  .header .header__title {\n    display: inline-block;\n    width: 20%;\n    text-align: center;\n    -ms-flex-item-align: center;\n        -ms-grid-row-align: center;\n        align-self: center; }\n    .header .header__title h1 {\n      color: #fff;\n      letter-spacing: .1em;\n      display: inline-block; }\n\nnav {\n  padding: 30px 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n  -ms-flex-pack: distribute;\n      justify-content: space-around; }\n  nav a {\n    display: inline-block;\n    padding: 10px;\n    margin: 1px; }\n  nav button {\n    font-size: 1.5em !important;\n    font-family: serif; }\n\n.header__profile {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-item-align: center;\n      align-self: center;\n  border: 2px solid black;\n  border-radius: 4px;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  display: inline-block;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 5px 20px 30px; }\n  .header__profile div {\n    text-align: center; }\n  .header__profile h4 {\n    text-align: center;\n    color: #d6d6d6; }\n  .header__profile .disconnected #circle {\n    fill: #D6D6D6; }\n  .header__profile .disconnected #profile {\n    fill: #000; }\n  .header__profile .connected {\n    color: #000; }\n    .header__profile .connected #circle {\n      fill: #55ad07; }\n    .header__profile .connected #profile {\n      fill: #e5e5e5; }\n\n.join__form {\n  height: auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .join__form label {\n    display: inline-block;\n    padding: 15px 0;\n    font-size: 1.5em; }\n  .join__form input {\n    width: 60%;\n    min-width: 300px;\n    height: 50px; }\n  .join__form p {\n    display: inline-block;\n    width: 50%;\n    text-align: center;\n    min-width: 250px;\n    margin-top: 20px;\n    padding: 8px;\n    border: 1px dashed black; }\n  .join__form button {\n    margin-top: 10px; }\n\n.not-found {\n  height: 300px; }\n\n.audience__askMembers {\n  margin-top: 3%;\n  font-size: 1.5em; }\n\n.audience__questions {\n  margin-top: 30px;\n  text-align: center;\n  padding: 20px 40px;\n  border: 2px solid #000;\n  letter-spacing: .1em; }\n\n.underline {\n  background-color: #000;\n  padding: 5px 10px;\n  border-radius: 4px;\n  color: #fff; }\n\n.currentQuestion__answer {\n  letter-spacing: .1em;\n  font-size: 1.3em;\n  text-align: center; }\n\n.chatbox {\n  position: fixed;\n  bottom: 20px;\n  right: 10px;\n  background: #2b303a;\n  border-radius: 20px 0 0 10px;\n  background-clip: padding-box;\n  width: 340px; }\n\n.chatbox__header {\n  padding: 20px 24px;\n  color: #fff;\n  border-bottom: 1px solid #343a45;\n  position: relative; }\n  .chatbox__header .chatbox-close {\n    display: inline-block;\n    color: #7f8186;\n    zoom: 1;\n    opacity: 1;\n    top: 3px;\n    position: absolute;\n    right: 20px;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%); }\n  .chatbox__header .chatbox-close:hover {\n    color: #fff; }\n  .chatbox__header .user-status {\n    display: inline-block;\n    margin-right: 5px;\n    width: 8px;\n    height: 8px;\n    border-radius: 8px;\n    background-clip: padding-box;\n    -webkit-transition: all 300ms ease-in-out;\n    transition: all 300ms ease-in-out; }\n  .chatbox__header .disconnected {\n    background: #575d67; }\n  .chatbox__header .connected {\n    background: green; }\n  .chatbox__header .display-name {\n    color: #fff;\n    font-size: 1em; }\n  .chatbox__header small {\n    color: rgba(190, 192, 194, 0.6);\n    font-size: .9em;\n    padding-left: 8px; }\n\n.chatbox__body {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  overflow: auto;\n  height: 250px; }\n  .chatbox__body li {\n    padding: 20px 24px; }\n  .chatbox__body .user {\n    font-weight: bold;\n    color: #fff; }\n  .chatbox__body p {\n    color: rgba(190, 192, 194, 0.9); }\n  .chatbox__body .time {\n    font-style: italic;\n    color: rgba(190, 192, 194, 0.6);\n    font-size: .8em;\n    float: right; }\n  .chatbox__body .unread {\n    background: #3d4451; }\n  .chatbox__body::after {\n    clear: both;\n    content: \" \";\n    display: table; }\n\n.chatbox__textarea {\n  padding: 20px 24px;\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: row;\n      flex-flow: row; }\n  .chatbox__textarea textarea {\n    word-wrap: break-word;\n    resize: horizontal;\n    height: auto;\n    background: #343a45;\n    border: 1px solid #343a45;\n    color: #fff;\n    max-height: 100px !important;\n    padding-right: 35px;\n    box-shadow: none !important;\n    outline: 0 !important;\n    font-size: .9em;\n    margin-right: 1px; }\n  .chatbox__textarea .send {\n    border-radius: 2px;\n    outline: 0 !important; }\n", ""]);
+	exports.push([module.id, ".currentQuestion__choice {\n  padding: 40px; }\n\n.logo {\n  color: red;\n  font-weight: bold; }\n\nheader {\n  box-shadow: 2px 2px 32px -4px rgba(63, 63, 63, 0.9);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  padding-bottom: 30px;\n  margin-bottom: 50px; }\n\n.header {\n  background-color: #3f3f3f;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -ms-flex-line-pack: center;\n      align-content: center;\n  padding: 10px; }\n  .header .header__guy {\n    -ms-flex-item-align: center;\n        -ms-grid-row-align: center;\n        align-self: center; }\n  .header .header__title {\n    display: inline-block;\n    width: 20%;\n    text-align: center;\n    -ms-flex-item-align: center;\n        -ms-grid-row-align: center;\n        align-self: center; }\n    .header .header__title h1 {\n      color: #fff;\n      letter-spacing: .1em;\n      display: inline-block; }\n\nnav {\n  padding: 30px 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n  -ms-flex-pack: distribute;\n      justify-content: space-around; }\n  nav a {\n    display: inline-block;\n    padding: 10px;\n    margin: 1px; }\n  nav button {\n    font-size: 1.5em !important;\n    font-family: serif; }\n\n.header__profile {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-item-align: center;\n      align-self: center;\n  border: 2px solid black;\n  border-radius: 4px;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  display: inline-block;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 5px 20px 30px; }\n  .header__profile div {\n    text-align: center; }\n  .header__profile h4 {\n    text-align: center;\n    color: #d6d6d6; }\n  .header__profile .disconnected #circle {\n    fill: #D6D6D6; }\n  .header__profile .disconnected #profile {\n    fill: #000; }\n  .header__profile .connected {\n    color: #000; }\n    .header__profile .connected #circle {\n      fill: #55ad07; }\n    .header__profile .connected #profile {\n      fill: #e5e5e5; }\n\n.join__form {\n  height: auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .join__form label {\n    display: inline-block;\n    padding: 15px 0;\n    font-size: 1.5em; }\n  .join__form input {\n    width: 60%;\n    min-width: 300px;\n    height: 50px; }\n  .join__form p {\n    display: inline-block;\n    width: 50%;\n    text-align: center;\n    min-width: 250px;\n    margin-top: 20px;\n    padding: 8px;\n    border: 1px dashed black; }\n  .join__form button {\n    margin-top: 10px; }\n\n.not-found {\n  height: 300px; }\n\n.audience__askMembers {\n  margin-top: 3%;\n  font-size: 1.5em; }\n\n.audience__questions {\n  margin-top: 30px;\n  text-align: center;\n  padding: 20px 40px;\n  border: 2px solid #000;\n  letter-spacing: .1em; }\n\n.underline {\n  background-color: #000;\n  padding: 5px 10px;\n  border-radius: 4px;\n  color: #fff; }\n\n.currentQuestion__answer {\n  letter-spacing: .1em;\n  font-size: 1.3em;\n  text-align: center; }\n\n.questions__default {\n  margin-bottom: 80px; }\n  .questions__default li {\n    cursor: pointer;\n    list-style: none;\n    padding: 10px 0 10px 15px;\n    border-radius: 10px 0 0 4px;\n    width: 80%;\n    min-width: 200px;\n    -webkit-transition: all .1s ease-in-out;\n    transition: all .1s ease-in-out;\n    letter-spacing: .1em;\n    font-size: 1.1em; }\n    .questions__default li:hover {\n      background-color: #2aaad1;\n      color: #fff; }\n\n.questions__create {\n  display: none; }\n  .questions__create .answers {\n    width: 100%;\n    margin: 0 auto;\n    padding: 20px; }\n    .questions__create .answers div {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-orient: horizontal;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: row;\n              flex-direction: row;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center; }\n  .questions__create label {\n    padding: 5px;\n    margin-top: 5px;\n    margin-right: 2px;\n    border-radius: 10px 0 0 10px;\n    border: 1px solid black; }\n\n.question__submit {\n  outline: 0;\n  background-color: #fff;\n  border: 1px solid black;\n  padding: 10px; }\n\n.show {\n  display: block; }\n\n.chatbox {\n  position: fixed;\n  bottom: 20px;\n  right: 10px;\n  background: #2b303a;\n  border-radius: 20px 0 0 10px;\n  background-clip: padding-box;\n  width: 340px;\n  z-index: 10;\n  -webkit-transition: all .1s ease-in;\n  transition: all .1s ease-in; }\n  .chatbox > * {\n    -webkit-transition: inherit;\n    transition: inherit; }\n\n.closed {\n  background: transparent;\n  bottom: 3px;\n  right: 3px; }\n  .closed > * {\n    opacity: 0; }\n  .closed .chatbox__header {\n    z-index: 20;\n    position: absolute;\n    right: 0;\n    bottom: 0;\n    background-color: black;\n    opacity: 1;\n    width: 200px; }\n\n.chatbox__header {\n  padding: 20px 24px;\n  color: #fff;\n  border-bottom: 1px solid #343a45;\n  position: relative; }\n  .chatbox__header .chatbox-close {\n    display: inline-block;\n    color: #7f8186;\n    zoom: 1;\n    opacity: 1;\n    top: 3px;\n    position: absolute;\n    right: 20px;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%); }\n  .chatbox__header .chatbox-close:hover {\n    color: #fff; }\n  .chatbox__header .user-status {\n    display: inline-block;\n    margin-right: 5px;\n    width: 8px;\n    height: 8px;\n    border-radius: 8px;\n    background-clip: padding-box;\n    -webkit-transition: all 300ms ease-in-out;\n    transition: all 300ms ease-in-out; }\n  .chatbox__header .disconnected {\n    background: #575d67; }\n  .chatbox__header .connected {\n    background: green; }\n  .chatbox__header .display-name {\n    color: #fff;\n    font-size: 1em; }\n  .chatbox__header small {\n    color: rgba(190, 192, 194, 0.6);\n    font-size: .9em;\n    padding-left: 8px; }\n\n.chatbox__body {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  overflow: auto;\n  max-height: 250px;\n  min-height: 60px; }\n  .chatbox__body li {\n    padding: 20px 24px; }\n  .chatbox__body .user {\n    font-weight: bold;\n    color: #fff; }\n  .chatbox__body p {\n    color: rgba(190, 192, 194, 0.9); }\n  .chatbox__body .time {\n    font-style: italic;\n    color: rgba(190, 192, 194, 0.6);\n    font-size: .8em;\n    float: right; }\n  .chatbox__body .unread {\n    background: #3d4451; }\n  .chatbox__body::after {\n    clear: both;\n    content: \" \";\n    display: table; }\n\n.chatbox__textarea {\n  padding: 20px 24px;\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: row;\n      flex-flow: row; }\n  .chatbox__textarea textarea {\n    word-wrap: break-word;\n    resize: horizontal;\n    height: auto;\n    background: #343a45;\n    border: 1px solid #343a45;\n    color: #fff;\n    max-height: 100px !important;\n    padding-right: 35px;\n    box-shadow: none !important;\n    outline: 0 !important;\n    font-size: .9em;\n    margin-right: 1px; }\n  .chatbox__textarea .send {\n    border-radius: 2px;\n    outline: 0 !important; }\n", ""]);
 
 	// exports
 
@@ -62341,7 +62341,7 @@
 	        _react2.default.createElement(
 	          _Display2.default,
 	          { 'if': props.state.currentQuestion },
-	          _react2.default.createElement(_Ask2.default, { question: props.state.currentQuestion, emit: props.emit })
+	          _react2.default.createElement(_Ask2.default, { state: props.state, question: props.state.currentQuestion, emit: props.emit })
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -63033,6 +63033,11 @@
 	        'div',
 	        { id: 'currentQuestion' },
 	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          this.props.state.title
+	        ),
+	        _react2.default.createElement(
 	          _Display2.default,
 	          { 'if': this.state.answer },
 	          _react2.default.createElement(
@@ -63089,7 +63094,7 @@
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(24), RootInstanceProvider = __webpack_require__(25), ReactMount = __webpack_require__(22), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -63103,15 +63108,15 @@
 
 	var addMemberRow = function addMemberRow(member, i) {
 	  return _react2.default.createElement(
-	    "tr",
+	    'tr',
 	    { key: i },
 	    _react2.default.createElement(
-	      "td",
+	      'td',
 	      null,
 	      member.name
 	    ),
 	    _react2.default.createElement(
-	      "td",
+	      'td',
 	      null,
 	      member.id
 	    )
@@ -63121,38 +63126,38 @@
 	var Attendance = function Attendance(props) {
 
 	  return _react2.default.createElement(
-	    "div",
-	    null,
+	    'div',
+	    { style: { marginTop: '50px' } },
 	    _react2.default.createElement(
-	      "h2",
+	      'h2',
 	      null,
-	      "Attendance - ",
+	      'Attendance - ',
 	      props.audience.length,
-	      " members "
+	      ' members '
 	    ),
 	    _react2.default.createElement(
-	      "table",
-	      { className: "table table-striped" },
+	      'table',
+	      { className: 'table table-striped' },
 	      _react2.default.createElement(
-	        "thead",
+	        'thead',
 	        null,
 	        _react2.default.createElement(
-	          "tr",
+	          'tr',
 	          null,
 	          _react2.default.createElement(
-	            "th",
+	            'th',
 	            null,
-	            "Audience members"
+	            'Audience members'
 	          ),
 	          _react2.default.createElement(
-	            "th",
+	            'th',
 	            null,
-	            "Socket ID"
+	            'Socket ID'
 	          )
 	        )
 	      ),
 	      _react2.default.createElement(
-	        "tbody",
+	        'tbody',
 	        null,
 	        props.audience.map(addMemberRow)
 	      )
@@ -63202,12 +63207,14 @@
 	    var _this = _possibleConstructorReturn(this, (ChatBox.__proto__ || Object.getPrototypeOf(ChatBox)).call(this));
 
 	    _this.state = {
-	      heightLimit: 100
+	      heightLimit: 100,
+	      close: false
 	    };
 	    _this.resize = _this.resize.bind(_this);
 	    _this.sendMessage = _this.sendMessage.bind(_this);
 	    _this.addMessage = _this.addMessage.bind(_this);
 	    _this.addZero = _this.addZero.bind(_this);
+	    _this.close = _this.close.bind(_this);
 	    return _this;
 	  }
 
@@ -63218,6 +63225,13 @@
 	        i = "0" + i;
 	      }
 	      return i;
+	    }
+	  }, {
+	    key: 'close',
+	    value: function close(e) {
+	      e.preventDefault();
+	      this.refs.close.classList.toggle('closed');
+	      this.setState({ close: !this.state.close });
 	    }
 	  }, {
 	    key: 'sendMessage',
@@ -63270,14 +63284,14 @@
 	      console.log(this.props.state.message);
 	      return _react2.default.createElement(
 	        'form',
-	        { className: 'chatbox', action: 'javascript:void(0)', onSubmit: this.sendMessage },
+	        { className: 'chatbox', ref: 'close', action: 'javascript:void(0)', onSubmit: this.sendMessage },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'chatbox__header' },
 	          _react2.default.createElement(
 	            'a',
-	            { href: '#', className: 'chatbox-close' },
-	            _react2.default.createElement('span', { className: 'glyphicon glyphicon-remove', 'aria-hidden': 'true' })
+	            { href: '#', className: 'chatbox-close', onClick: this.close },
+	            _react2.default.createElement('span', { className: this.state.close ? "glyphicon glyphicon-chevron-up" : "glyphicon glyphicon-remove", 'aria-hidden': 'true' })
 	          ),
 	          _react2.default.createElement('span', { className: "user-status " + this.props.state.status }),
 	          _react2.default.createElement(
@@ -63624,11 +63638,11 @@
 	        _react2.default.createElement(
 	          'label',
 	          null,
-	          'Presentation Title'
+	          'Ask Title'
 	        ),
 	        _react2.default.createElement('input', { ref: 'title',
 	          className: 'form-control',
-	          placeholder: 'Enter a title for this presentation',
+	          placeholder: 'enter title for your question',
 	          required: true }),
 	        _react2.default.createElement(
 	          'button',
@@ -63669,6 +63683,8 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -63683,15 +63699,52 @@
 
 	    var _this = _possibleConstructorReturn(this, (Questions.__proto__ || Object.getPrototypeOf(Questions)).call(this));
 
+	    _this.state = {
+	      opened: false,
+	      answers: {
+	        q: '1',
+	        a: '',
+	        b: '',
+	        c: '',
+	        d: ''
+	      }
+	    };
+
 	    _this.ask = _this.ask.bind(_this);
 	    _this.addQuestion = _this.addQuestion.bind(_this);
+	    _this.writeQuestion = _this.writeQuestion.bind(_this);
+	    _this.handleChange = _this.handleChange.bind(_this);
+	    _this.submit = _this.submit.bind(_this);
+
 	    return _this;
 	  }
 
 	  _createClass(Questions, [{
+	    key: 'writeQuestion',
+	    value: function writeQuestion() {
+	      this.refs.new_question.classList.toggle('show');
+	      this.setState({ opened: !this.state.opened });
+	    }
+	  }, {
+	    key: 'submit',
+	    value: function submit(e, text) {
+	      e.preventDefault();
+	      var answers = { q: '', a: '', b: '', c: '', d: '' };
+	      this.ask(this.state.answers);
+	      this.setState({ answers: answers });
+	    }
+	  }, {
 	    key: 'ask',
 	    value: function ask(question) {
 	      this.props.emit('ask', question);
+	    }
+	  }, {
+	    key: 'handleChange',
+	    value: function handleChange(event) {
+	      var letter = event.target.classList[0].toString();
+	      var answers = Object.assign(this.state.answers, _defineProperty({}, letter, event.target.value));
+	      console.log(answers);
+	      this.setState({ answers: answers });
 	    }
 	  }, {
 	    key: 'addQuestion',
@@ -63699,30 +63752,103 @@
 	      var _this2 = this;
 
 	      return _react2.default.createElement(
-	        'ul',
-	        null,
-	        _react2.default.createElement(
-	          'li',
-	          { onClick: function onClick(e) {
-	              return _this2.ask(question);
-	            } },
-	          question.q
-	        )
+	        'li',
+	        { onClick: function onClick(e) {
+	            return _this2.ask(question);
+	          } },
+	        question.q
 	      );
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
-
+	      console.log(this.state);
 	      return _react2.default.createElement(
 	        'div',
-	        { id: 'questions', className: 'row' },
+	        _defineProperty({ className: 'questions' }, 'className', 'row'),
 	        _react2.default.createElement(
 	          _reactBootstrap.PageHeader,
 	          null,
-	          'Questions'
+	          'Default Questions'
 	        ),
-	        this.props.questions.map(this.addQuestion)
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'questions__default' },
+	          this.props.questions.map(this.addQuestion)
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.PageHeader,
+	          null,
+	          _react2.default.createElement(
+	            'span',
+	            { style: { padding: 5 } },
+	            'Your Question'
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Button,
+	            { bsStyle: 'info', onClick: this.writeQuestion },
+	            _react2.default.createElement('span', { className: this.state.opened ? "glyphicon glyphicon-minus" : "glyphicon glyphicon-plus", 'aria-hidden': 'true' })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'form',
+	          { ref: 'new_question', className: 'questions__create', onSubmit: this.submit },
+	          _react2.default.createElement('input', {
+	            type: 'text',
+	            value: this.state.q,
+	            onChange: this.handleChange,
+	            className: 'q questions-new form-control',
+	            placeholder: 'question' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row answers' },
+	            _react2.default.createElement(
+	              _reactBootstrap.Col,
+	              { md: 6, sm: 12 },
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                'A'
+	              ),
+	              _react2.default.createElement('input', { value: this.state.a, onChange: this.handleChange, className: 'a questions-option form-control', placeholder: 'options', required: true })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Col,
+	              { md: 6, sm: 12 },
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                'B'
+	              ),
+	              _react2.default.createElement('input', { value: this.state.b, onChange: this.handleChange, className: 'b questions-option form-control', placeholder: 'options', required: true })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Col,
+	              { md: 6, sm: 12 },
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                'C'
+	              ),
+	              _react2.default.createElement('input', { value: this.state.c, onChange: this.handleChange, className: 'c questions-option form-control', placeholder: 'options', required: true })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Col,
+	              { md: 6, sm: 12 },
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                'D'
+	              ),
+	              _react2.default.createElement('input', { value: this.state.d, onChange: this.handleChange, className: 'd questions-option form-control', placeholder: 'options', required: true })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'button',
+	            { className: 'btn btn-info', role: 'submit' },
+	            'Send your question'
+	          )
+	        )
 	      );
 	    }
 	  }]);
