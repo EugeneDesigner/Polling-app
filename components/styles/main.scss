@@ -30,7 +30,10 @@ header {
 
 
   .header__guy {
+    flex: 1;
     align-self: center;
+    height: 20%;
+    width: 30%;
 
   }
 
@@ -420,4 +423,19 @@ nav {
     letter-spacing: .03em;
 
   }
+}
+
+
+
+//Board
+
+
+#scoreboard {
+  height: 400px;
+}
+
+.tick {
+  display: block;
+  width: 50% !important;
+  background-color: yellow !important;
 }

@@ -16,6 +16,10 @@ const Speaker = (props) => {
 
           </Display>
 
+            <Display if={props.state.member.name}>
+              <PageHeader>Sorry, but only AskGuys are able to ask questions. Life is tough</PageHeader>
+            </Display>
+
           <Display if={!props.state.member.name}>
         <PageHeader>Start the Ask<span className="logo">|</span>ed session</PageHeader>
             <JoinSpeaker emit={props.emit}/>

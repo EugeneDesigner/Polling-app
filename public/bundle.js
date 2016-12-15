@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1437d6531b52b5aa7fca"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "cadf1a8803f3bf061c2d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -20153,7 +20153,7 @@
 
 
 	// module
-	exports.push([module.id, ".currentQuestion__choice {\n  padding: 40px; }\n\n.logo {\n  color: red;\n  font-weight: bold; }\n\nheader {\n  box-shadow: 2px 2px 32px -4px rgba(63, 63, 63, 0.9);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  padding-bottom: 30px;\n  margin-bottom: 50px; }\n\n.header {\n  background-color: #3f3f3f;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -ms-flex-line-pack: center;\n      align-content: center;\n  padding: 10px; }\n  .header .header__guy {\n    -ms-flex-item-align: center;\n        -ms-grid-row-align: center;\n        align-self: center; }\n  .header .header__title {\n    display: inline-block;\n    width: 20%;\n    text-align: center;\n    -ms-flex-item-align: center;\n        -ms-grid-row-align: center;\n        align-self: center; }\n    .header .header__title h1 {\n      color: #fff;\n      letter-spacing: .1em;\n      display: inline-block; }\n\nnav {\n  padding: 30px 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n  -ms-flex-pack: distribute;\n      justify-content: space-around; }\n  nav a {\n    display: inline-block;\n    padding: 10px;\n    margin: 1px; }\n  nav button {\n    font-size: 1.5em !important;\n    font-family: serif; }\n\n.header__profile {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-item-align: center;\n      align-self: center;\n  border: 2px solid black;\n  border-radius: 4px;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  display: inline-block;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 5px 20px 30px; }\n  .header__profile div {\n    text-align: center; }\n  .header__profile h4 {\n    text-align: center;\n    color: #d6d6d6; }\n  .header__profile .disconnected #circle {\n    fill: #D6D6D6; }\n  .header__profile .disconnected #profile {\n    fill: #000; }\n  .header__profile .connected {\n    color: #000; }\n    .header__profile .connected #circle {\n      fill: #55ad07; }\n    .header__profile .connected #profile {\n      fill: #e5e5e5; }\n\n.join__form {\n  height: auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .join__form label {\n    display: inline-block;\n    padding: 15px 0;\n    font-size: 1.5em; }\n  .join__form input {\n    width: 60%;\n    min-width: 300px;\n    height: 50px; }\n  .join__form p {\n    display: inline-block;\n    width: 50%;\n    text-align: center;\n    min-width: 250px;\n    margin-top: 20px;\n    padding: 8px;\n    border: 1px dashed black; }\n  .join__form button {\n    margin-top: 10px; }\n\n.not-found {\n  height: 300px; }\n\n.audience__askMembers {\n  margin-top: 3%;\n  font-size: 1.5em; }\n\n.audience__questions {\n  margin-top: 30px;\n  text-align: center;\n  padding: 20px 40px;\n  border: 2px solid #000;\n  letter-spacing: .1em; }\n\n.underline {\n  background-color: #000;\n  padding: 5px 10px;\n  border-radius: 4px;\n  color: #fff; }\n\n.currentQuestion__answer {\n  letter-spacing: .1em;\n  font-size: 1.3em;\n  text-align: center; }\n\n.questions__default {\n  margin-bottom: 80px; }\n  .questions__default li {\n    cursor: pointer;\n    list-style: none;\n    padding: 10px 0 10px 15px;\n    border-radius: 10px 0 0 4px;\n    width: 80%;\n    min-width: 200px;\n    -webkit-transition: all .1s ease-in-out;\n    transition: all .1s ease-in-out;\n    letter-spacing: .1em;\n    font-size: 1.1em; }\n    .questions__default li:hover {\n      background-color: #2aaad1;\n      color: #fff; }\n\n.questions__create {\n  display: none; }\n  .questions__create .answers {\n    width: 100%;\n    margin: 0 auto;\n    padding: 20px; }\n    .questions__create .answers div {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-orient: horizontal;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: row;\n              flex-direction: row;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center; }\n  .questions__create label {\n    padding: 5px;\n    margin-top: 5px;\n    margin-right: 2px;\n    border-radius: 10px 0 0 10px;\n    border: 1px solid black; }\n\n.question__submit {\n  outline: 0;\n  background-color: #fff;\n  border: 1px solid black;\n  padding: 10px; }\n\n.show {\n  display: block; }\n\n.chatbox {\n  position: fixed;\n  bottom: 20px;\n  right: 10px;\n  background: #2b303a;\n  border-radius: 20px 0 0 10px;\n  background-clip: padding-box;\n  width: 340px;\n  z-index: 10;\n  -webkit-transition: all .1s ease-in;\n  transition: all .1s ease-in; }\n  .chatbox > * {\n    -webkit-transition: inherit;\n    transition: inherit; }\n\n.closed {\n  background: transparent;\n  bottom: 3px;\n  right: 3px; }\n  .closed > * {\n    opacity: 0; }\n  .closed .chatbox__header {\n    z-index: 20;\n    position: absolute;\n    right: 0;\n    bottom: 0;\n    background-color: black;\n    opacity: 1;\n    width: 200px; }\n\n.chatbox__header {\n  padding: 20px 24px;\n  color: #fff;\n  border-bottom: 1px solid #343a45;\n  position: relative; }\n  .chatbox__header .chatbox-close {\n    display: inline-block;\n    color: #7f8186;\n    zoom: 1;\n    opacity: 1;\n    top: 3px;\n    position: absolute;\n    right: 20px;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%); }\n  .chatbox__header .chatbox-close:hover {\n    color: #fff; }\n  .chatbox__header .user-status {\n    display: inline-block;\n    margin-right: 5px;\n    width: 8px;\n    height: 8px;\n    border-radius: 8px;\n    background-clip: padding-box;\n    -webkit-transition: all 300ms ease-in-out;\n    transition: all 300ms ease-in-out; }\n  .chatbox__header .disconnected {\n    background: #575d67; }\n  .chatbox__header .connected {\n    background: green; }\n  .chatbox__header .display-name {\n    color: #fff;\n    font-size: 1em; }\n  .chatbox__header small {\n    color: rgba(190, 192, 194, 0.6);\n    font-size: .9em;\n    padding-left: 8px; }\n\n.chatbox__body {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  overflow: auto;\n  max-height: 250px;\n  min-height: 60px; }\n  .chatbox__body li {\n    padding: 20px 24px; }\n  .chatbox__body .user {\n    font-weight: bold;\n    color: #fff; }\n  .chatbox__body p {\n    color: rgba(190, 192, 194, 0.9); }\n  .chatbox__body .time {\n    font-style: italic;\n    color: rgba(190, 192, 194, 0.6);\n    font-size: .8em;\n    float: right; }\n  .chatbox__body .unread {\n    background: #3d4451; }\n  .chatbox__body::after {\n    clear: both;\n    content: \" \";\n    display: table; }\n\n.chatbox__textarea {\n  padding: 20px 24px;\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: row;\n      flex-flow: row; }\n  .chatbox__textarea textarea {\n    word-wrap: break-word;\n    resize: horizontal;\n    height: auto;\n    background: #343a45;\n    border: 1px solid #343a45;\n    color: #fff;\n    max-height: 100px !important;\n    padding-right: 35px;\n    box-shadow: none !important;\n    outline: 0 !important;\n    font-size: .9em;\n    margin-right: 1px; }\n  .chatbox__textarea .send {\n    border-radius: 2px;\n    outline: 0 !important; }\n", ""]);
+	exports.push([module.id, ".currentQuestion__choice {\n  padding: 40px; }\n\n.logo {\n  color: red;\n  font-weight: bold; }\n\nheader {\n  box-shadow: 2px 2px 32px -4px rgba(63, 63, 63, 0.9);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  padding-bottom: 30px;\n  margin-bottom: 50px; }\n\n.header {\n  background-color: #3f3f3f;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -ms-flex-line-pack: center;\n      align-content: center;\n  padding: 10px; }\n  .header .header__guy {\n    -ms-flex-item-align: center;\n        -ms-grid-row-align: center;\n        align-self: center; }\n  .header .header__title {\n    display: inline-block;\n    width: 20%;\n    text-align: center;\n    -ms-flex-item-align: center;\n        -ms-grid-row-align: center;\n        align-self: center; }\n    .header .header__title h1 {\n      color: #fff;\n      letter-spacing: .1em;\n      display: inline-block; }\n\nnav {\n  padding: 30px 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n  -ms-flex-pack: distribute;\n      justify-content: space-around; }\n  nav a {\n    display: inline-block;\n    padding: 10px;\n    margin: 1px; }\n  nav button {\n    font-size: 1.5em !important;\n    font-family: serif; }\n\n.header__profile {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-item-align: center;\n      align-self: center;\n  border: 2px solid black;\n  border-radius: 4px;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  display: inline-block;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 5px 20px 30px; }\n  .header__profile div {\n    text-align: center; }\n  .header__profile h4 {\n    text-align: center;\n    color: #d6d6d6; }\n  .header__profile .disconnected #circle {\n    fill: #D6D6D6; }\n  .header__profile .disconnected #profile {\n    fill: #000; }\n  .header__profile .connected {\n    color: #000; }\n    .header__profile .connected #circle {\n      fill: #55ad07; }\n    .header__profile .connected #profile {\n      fill: #e5e5e5; }\n\n.join__form {\n  height: auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .join__form label {\n    display: inline-block;\n    padding: 15px 0;\n    font-size: 1.5em; }\n  .join__form input {\n    width: 60%;\n    min-width: 300px;\n    height: 50px; }\n  .join__form p {\n    display: inline-block;\n    width: 50%;\n    text-align: center;\n    min-width: 250px;\n    margin-top: 20px;\n    padding: 8px;\n    border: 1px dashed black; }\n  .join__form button {\n    margin-top: 10px; }\n\n.not-found {\n  height: 300px; }\n\n.audience__askMembers {\n  margin-top: 3%;\n  font-size: 1.5em; }\n\n.audience__questions {\n  margin-top: 30px;\n  text-align: center;\n  padding: 20px 40px;\n  border: 2px solid #000;\n  letter-spacing: .1em; }\n\n.underline {\n  background-color: #000;\n  padding: 5px 10px;\n  border-radius: 4px;\n  color: #fff; }\n\n.currentQuestion__answer {\n  letter-spacing: .1em;\n  font-size: 1.3em;\n  text-align: center; }\n\n.questions__default {\n  margin-bottom: 80px; }\n  .questions__default li {\n    cursor: pointer;\n    list-style: none;\n    padding: 10px 0 10px 15px;\n    border-radius: 10px 0 0 4px;\n    width: 80%;\n    min-width: 200px;\n    -webkit-transition: all .1s ease-in-out;\n    transition: all .1s ease-in-out;\n    letter-spacing: .1em;\n    font-size: 1.1em; }\n    .questions__default li:hover {\n      background-color: #2aaad1;\n      color: #fff; }\n\n.questions__create {\n  display: none; }\n  .questions__create .answers {\n    width: 100%;\n    margin: 0 auto;\n    padding: 20px; }\n    .questions__create .answers div {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-orient: horizontal;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: row;\n              flex-direction: row;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center; }\n  .questions__create label {\n    padding: 5px;\n    margin-top: 5px;\n    margin-right: 2px;\n    border-radius: 10px 0 0 10px;\n    border: 1px solid black; }\n\n.question__submit {\n  outline: 0;\n  background-color: #fff;\n  border: 1px solid black;\n  padding: 10px; }\n\n.show {\n  display: block; }\n\n.chatbox {\n  position: fixed;\n  bottom: 20px;\n  right: 10px;\n  background: #2b303a;\n  border-radius: 20px 0 0 10px;\n  background-clip: padding-box;\n  width: 340px;\n  z-index: 10;\n  -webkit-transition: all .1s ease-in;\n  transition: all .1s ease-in; }\n  .chatbox > * {\n    -webkit-transition: inherit;\n    transition: inherit; }\n\n.closed {\n  background: transparent;\n  bottom: 3px;\n  right: 3px; }\n  .closed > * {\n    opacity: 0; }\n  .closed .chatbox__header {\n    z-index: 20;\n    position: absolute;\n    right: 0;\n    bottom: 0;\n    background-color: black;\n    opacity: 1;\n    width: 200px; }\n\n.chatbox__header {\n  padding: 20px 24px;\n  color: #fff;\n  border-bottom: 1px solid #343a45;\n  position: relative; }\n  .chatbox__header .chatbox-close {\n    display: inline-block;\n    color: #7f8186;\n    zoom: 1;\n    opacity: 1;\n    top: 3px;\n    position: absolute;\n    right: 20px;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%); }\n  .chatbox__header .chatbox-close:hover {\n    color: #fff; }\n  .chatbox__header .user-status {\n    display: inline-block;\n    margin-right: 5px;\n    width: 8px;\n    height: 8px;\n    border-radius: 8px;\n    background-clip: padding-box;\n    -webkit-transition: all 300ms ease-in-out;\n    transition: all 300ms ease-in-out; }\n  .chatbox__header .disconnected {\n    background: #575d67; }\n  .chatbox__header .connected {\n    background: green; }\n  .chatbox__header .display-name {\n    color: #fff;\n    font-size: 1em; }\n  .chatbox__header small {\n    color: rgba(190, 192, 194, 0.6);\n    font-size: .9em;\n    padding-left: 8px; }\n\n.chatbox__body {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  overflow: auto;\n  max-height: 250px;\n  min-height: 60px; }\n  .chatbox__body li {\n    padding: 20px 24px; }\n  .chatbox__body .user {\n    font-weight: bold;\n    color: #fff; }\n  .chatbox__body p {\n    color: rgba(190, 192, 194, 0.9); }\n  .chatbox__body .time {\n    font-style: italic;\n    color: rgba(190, 192, 194, 0.6);\n    font-size: .8em;\n    float: right; }\n  .chatbox__body .unread {\n    background: #3d4451; }\n  .chatbox__body::after {\n    clear: both;\n    content: \" \";\n    display: table; }\n\n.chatbox__textarea {\n  padding: 20px 24px;\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-flow: row;\n      flex-flow: row; }\n  .chatbox__textarea textarea {\n    word-wrap: break-word;\n    resize: horizontal;\n    height: auto;\n    background: #343a45;\n    border: 1px solid #343a45;\n    color: #fff;\n    max-height: 100px !important;\n    padding-right: 35px;\n    box-shadow: none !important;\n    outline: 0 !important;\n    font-size: .9em;\n    margin-right: 1px; }\n  .chatbox__textarea .send {\n    border-radius: 2px;\n    outline: 0 !important; }\n\n.current__asker {\n  text-align: right;\n  color: #3f3f3f;\n  font-size: 1.3em; }\n  .current__asker span {\n    padding: 4px;\n    background-color: #3f3f3f;\n    color: #fff;\n    border-radius: 2px;\n    letter-spacing: .03em; }\n\n#scoreboard {\n  height: 400px; }\n\n.tick {\n  display: block;\n  width: 50% !important;\n  background-color: yellow !important; }\n", ""]);
 
 	// exports
 
@@ -62410,10 +62410,12 @@
 	    _react2.default.createElement(
 	      _Display2.default,
 	      { 'if': props.state.status === 'connected' && props.state.currentQuestion },
-	      _react2.default.createElement(_reactD.BarChart, { data: barGraphData(props.state.results),
+	      _react2.default.createElement(_reactD.BarChart, { className: 'lol', data: barGraphData(props.state.results),
 	        title: props.state.currentQuestion.q,
 	        height: window.innerHeight * 0.6,
-	        width: window.innerWidth * 0.9 })
+	        width: window.innerWidth * 0.9,
+	        margin: { top: 20, bottom: 40, left: 20, right: 0 }
+	      })
 	    ),
 	    _react2.default.createElement(
 	      _Display2.default,
@@ -62555,6 +62557,15 @@
 	        { 'if': props.state.member.name && props.state.member.type === 'speaker' },
 	        _react2.default.createElement(_Questions2.default, { questions: props.state.questions, emit: props.emit }),
 	        _react2.default.createElement(_Attendance2.default, { audience: props.state.audience })
+	      ),
+	      _react2.default.createElement(
+	        _Display2.default,
+	        { 'if': props.state.member.name },
+	        _react2.default.createElement(
+	          _reactBootstrap.PageHeader,
+	          null,
+	          'Sorry, but only AskGuys are able to ask questions. Life is tough'
+	        )
 	      ),
 	      _react2.default.createElement(
 	        _Display2.default,
@@ -62995,6 +63006,7 @@
 	  }, {
 	    key: 'select',
 	    value: function select(choice) {
+	      console.log(choice);
 	      this.setState({
 	        answer: choice
 	      });
@@ -63033,9 +63045,14 @@
 	        'div',
 	        { id: 'currentQuestion' },
 	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          this.props.state.title
+	          'p',
+	          { className: 'current__asker' },
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            this.props.state.speaker
+	          ),
+	          ' is asking'
 	        ),
 	        _react2.default.createElement(
 	          _Display2.default,
@@ -63215,6 +63232,7 @@
 	    _this.addMessage = _this.addMessage.bind(_this);
 	    _this.addZero = _this.addZero.bind(_this);
 	    _this.close = _this.close.bind(_this);
+	    _this.markRead = _this.markRead.bind(_this);
 	    return _this;
 	  }
 
@@ -63258,9 +63276,10 @@
 	  }, {
 	    key: 'addMessage',
 	    value: function addMessage(chatter, i) {
+	      console.log(document.activeElement);
 	      return _react2.default.createElement(
 	        'li',
-	        { className: 'message' },
+	        { className: chatter.name === this.props.state.member.name || document.activeElement === this.refs.text ? 'message' : 'message unread' },
 	        _react2.default.createElement(
 	          'span',
 	          { className: 'user' },
@@ -63279,9 +63298,18 @@
 	      );
 	    }
 	  }, {
+	    key: 'markRead',
+	    value: function markRead() {
+	      var elements = document.querySelectorAll('.unread');
+	      console.log(elements);
+	      for (var i = elements.length - 1; i >= 0; --i) {
+	        console.log(elements[i]);
+	        elements[i].className = 'message';
+	      }
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
-	      console.log(this.props.state.message);
 	      return _react2.default.createElement(
 	        'form',
 	        { className: 'chatbox', ref: 'close', action: 'javascript:void(0)', onSubmit: this.sendMessage },
@@ -63313,7 +63341,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'chatbox__textarea' },
-	          _react2.default.createElement('textarea', { ref: 'text', onKeyDown: this.resize, className: 'form-control autogrow', placeholder: 'Type your message' }),
+	          _react2.default.createElement('textarea', { ref: 'text', onBlur: this.markRead, onKeyDown: this.resize, className: 'form-control autogrow', placeholder: 'Type your message' }),
 	          _react2.default.createElement(
 	            _reactBootstrap.Button,
 	            { className: 'send', bsStyle: 'primary', type: 'submit' },

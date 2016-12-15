@@ -9,11 +9,12 @@ export default class ChatBox extends Component {
       heightLimit: 100,
       close: false
     }
-    this.resize = this.resize.bind(this)
-    this.sendMessage = this.sendMessage.bind(this)
-    this.addMessage = this.addMessage.bind(this)
-    this.addZero = this.addZero.bind(this)
-    this.close = this.close.bind(this)
+    this.resize       = this.resize.bind(this)
+    this.sendMessage  = this.sendMessage.bind(this)
+    this.addMessage   = this.addMessage.bind(this)
+    this.addZero      = this.addZero.bind(this)
+    this.close        = this.close.bind(this)
+    this.markRead     = this.markRead.bind(this)
   }
 
   addZero(i) {
@@ -54,8 +55,9 @@ export default class ChatBox extends Component {
   }
 
   addMessage(chatter, i) {
+    console.log(document.activeElement)
     return (
-      <li className="message">
+      <li className={chatter.name === this.props.state.member.name || document.activeElement === this.refs.text ? 'message' : 'message unread'}>
         <span className="user">{chatter.name}</span>
         <p>{chatter.message}</p>
         <span className="time">{chatter.time}</span>
@@ -63,9 +65,19 @@ export default class ChatBox extends Component {
     )
   }
 
+  markRead() {
+    let elements = document.querySelectorAll('.unread')
+    console.log(elements)
+    for (let i = elements.length - 1; i>=0; --i) {
+      console.log( elements[i])
+      elements[i].className = 'message';
+
+    }
+
+  }
+
 
   render() {
-    console.log(this.props.state.message)
     return (
       <form className="chatbox" ref="close"  action="javascript:void(0)" onSubmit={this.sendMessage}>
           <div className="chatbox__header">
@@ -79,7 +91,7 @@ export default class ChatBox extends Component {
           {this.props.state.message ? <ul className="chatbox__body">{this.props.state.message.map(this.addMessage)}</ul> : null}
 
             <div className="chatbox__textarea">
-            <textarea ref='text' onKeyDown={this.resize} className="form-control autogrow" placeholder="Type your message"></textarea>
+            <textarea ref='text' autoFocus={false} onFocus={this.markRead} onKeyDown={this.resize} className="form-control autogrow" placeholder="Type your message"></textarea>
             <Button className="send" bsStyle="primary" type="submit"><span className="glyphicon glyphicon-envelope" aria-hidden="true"></span></Button>
           </div>
       </form>

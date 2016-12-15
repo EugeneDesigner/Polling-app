@@ -10,7 +10,7 @@ const app = express()
 
 
 let connections     = [],
-    title           = 'AskTitle',
+    title           = 'Ask|ed',
     audience        = [],
     speaker         = {},
     currentQuestion = false,

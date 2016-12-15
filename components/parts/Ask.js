@@ -36,6 +36,7 @@ export default class Ask extends Component  {
       }
 
       select(choice) {
+        console.log(choice)
         this.setState({
           answer: choice
         })
