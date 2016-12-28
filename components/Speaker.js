@@ -16,7 +16,7 @@ const Speaker = (props) => {
 
           </Display>
 
-            <Display if={props.state.member.name}>
+            <Display if={props.state.member.name && props.state.member.type === 'audience'}>
               <PageHeader>Sorry, but only AskGuys are able to ask questions. Life is tough</PageHeader>
             </Display>
 

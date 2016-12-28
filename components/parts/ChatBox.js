@@ -33,11 +33,14 @@ export default class ChatBox extends Component {
   }
 
   sendMessage() {
-    let d = new Date(),
-      day  = this.addZero(d.getHours()) + ':' + this.addZero(d.getMinutes());
-    let chatter = [this.refs.text.value, this.props.state.member.name, day]
-    this.props.emit('chat', chatter)
-    this.refs.text.value = ''
+    if (this.refs.text.value) {
+      let d = new Date(),
+        day  = this.addZero(d.getHours()) + ':' + this.addZero(d.getMinutes());
+      let chatter = [this.refs.text.value, this.props.state.member.name, day]
+      this.props.emit('chat', chatter)
+      this.refs.text.value = ''
+    }
+
   }
 
   resize(e) {
@@ -55,7 +58,6 @@ export default class ChatBox extends Component {
   }
 
   addMessage(chatter, i) {
-    console.log(document.activeElement)
     return (
       <li className={chatter.name === this.props.state.member.name || document.activeElement === this.refs.text ? 'message' : 'message unread'}>
         <span className="user">{chatter.name}</span>

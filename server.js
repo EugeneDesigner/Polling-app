@@ -21,13 +21,16 @@ let connections     = [],
                         d: 0
                       }
 
-const compiler = webpack(webpackConfig)
-app.use(webpackMiddleware(compiler, {
-  hot: true,
-  publicPath: webpackConfig.output.publicPath,
-  noInfo: true
-}))
-app.use(webpackHotMiddleware(compiler))
+
+if (process.env.NODE_ENV !== 'production') {
+  const compiler = webpack(webpackConfig)
+  app.use(webpackMiddleware(compiler, {
+    hot: true,
+    publicPath: webpackConfig.output.publicPath,
+    noInfo: true
+  }))
+  app.use(webpackHotMiddleware(compiler))
+}
 
 app.use(express.static('./public'))
 app.use(express.static('./node_modules/bootstrap/dist'))
@@ -93,7 +96,7 @@ io.sockets.on('connection', (socket) => {
 
   socket.on('ask', function(question) {
     currentQuestion = question
-    results         = {a: 0, b: 0, c: 0, d: 0}
+    results         = {[question.a]: 0, [question.b]: 0, [question.c]: 0, [question.d]: 0}
     io.sockets.emit('ask', currentQuestion)
     console.log("Question Asked: %s", question.q)
   })

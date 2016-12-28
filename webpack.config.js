@@ -1,9 +1,8 @@
 const webpack = require('webpack')
 const autoprefixer = require('autoprefixer')
 module.exports = {
-  devtools: 'eval-source-map',
+  devtools: 'source-map',
   entry: [
-    'webpack-hot-middleware/client',
     './client.js'
   ],
   output: {
@@ -12,9 +11,20 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
-    new webpack.NoErrorsPlugin(),
+    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+     minimize: true,
+     compress: {
+       warnings: false
+     }
+   }),
+   new webpack.DefinePlugin({
+     'process.env': {
+       'NODE_ENV': JSON.stringify('production')
+     }
+   })
   ],
   module: {
     loaders: [

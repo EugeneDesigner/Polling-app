@@ -8,6 +8,9 @@
 }
 
 
+h1 {
+  font-size: 3em !important;
+}
 
 
 
@@ -24,7 +27,7 @@ header {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   padding: 10px;
 
 
@@ -40,7 +43,6 @@ header {
 
   .header__title {
     display: inline-block;
-    width: 20%;
     text-align: center;
     align-self: center;
 
@@ -257,6 +259,7 @@ nav {
   background: #2b303a;
   border-radius: 20px 0 0 10px;
   background-clip: padding-box;
+  max-width: 60%;
   width: 340px;
   z-index: 10;
   transition: all .1s ease-in;
@@ -396,7 +399,7 @@ nav {
     border: 1px solid #343a45;
     color: #fff;
     max-height: 100px !important;
-    padding-right: 35px;
+    padding-right: 10px;
     box-shadow: none !important;
     outline: 0 !important;
     font-size: .9em;
@@ -405,7 +408,16 @@ nav {
 
   .send {
     border-radius: 2px;
+    max-width: 10%;
     outline: 0 !important;
+
+    span::before {
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      transform: translateX(50%);
+
+    }
   }
 }
 
@@ -438,4 +450,11 @@ nav {
   display: block;
   width: 50% !important;
   background-color: yellow !important;
+}
+
+
+@media screen and (max-width: 640px) {
+  body {
+    font-size: 90%;
+  }
 }

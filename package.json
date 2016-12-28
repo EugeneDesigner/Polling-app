@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel-node server.js",
-    "prestart": "webpack"
+    "postinstall": "webpack -p"
+  },
+  "engines": {
+  "node": ">=6.0.0",
+  "npm": "^3.0.0"
   },
   "keywords": [],
   "author": "",

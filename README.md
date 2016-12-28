@@ -7,4 +7,4 @@ I wanted to learn Socket.io. So, I have built this small app while googling, loo
 * Socket.io
 * React
 * Node
-* react-bootstrap
+* Bootstrap
